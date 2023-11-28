@@ -1,0 +1,142 @@
+/* Confirmation.css */
+
+.confirmation {
+  text-align: center;
+  padding: 20px;
+}
+
+.confirmation_head {
+  margin-top: 28px;
+  color: #01909a;
+}
+
+.ticket {
+  border: 2px solid #01909a;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ticket-label {
+  font-weight: bold;
+}
+
+.ticket-value {
+  color: #01909a;
+}
+
+.confirmation_image {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+/* Confirmation.css */
+
+.confirmation {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation_head {
+  text-align: center;
+  color: #009688;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.ticket {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.ticket h2 {
+  color: #009688;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.ticket-info {
+  margin-bottom: 15px;
+}
+
+.ticket-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #555;
+}
+
+.ticket-value {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Company Details */
+.company-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.company-details h3 {
+  font-size: 20px;
+  color: #009688;
+  margin-bottom: 15px;
+}
+
+/* Disclaimer */
+.disclaimer {
+  margin-top: 20px;
+}
+
+.disclaimer h3 {
+  font-size: 20px;
+  color: #009688;
+  margin-bottom: 15px;
+}
+
+/* Other Information */
+.other-info {
+  margin-top: 20px;
+}
+
+.other-info h3 {
+  font-size: 20px;
+  color: #009688;
+  margin-bottom: 15px;
+}
+
+.confirm-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #45a049;
+}
+
+/* Adjustments for the additional information sections */
+.company-details,
+.disclaimer,
+.other-info {
+  margin-bottom: 20px;
+}

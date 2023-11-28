@@ -1,0 +1,95 @@
+/* General Styling */
+.destination {
+  font-family: "YourFont", sans-serif;
+  margin: 4rem 6rem;
+}
+
+.destination h1 {
+  font-size: 3rem;
+}
+
+.first-des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.des-text {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+
+.des-text h2 {
+  padding-bottom: 1rem;
+}
+
+.image {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image img {
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.29);
+}
+
+.image img:nth-child(2) {
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+
+/* Show More Button Styling */
+.show-more-btn {
+  background-color: #fff;
+  color: #222;
+  padding: 0.5rem 1rem;
+  border: 2px solid #01959a; /* Border added for better visibility */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Added transition for smoother hover effect */
+}
+
+.show-more-btn:hover {
+  background-color: #01959a;
+  color: #fff;
+  border-color: #fff; /* Adjusted border color on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 850px) {
+  .destination {
+    margin: 4rem 2rem;
+  }
+
+  .first-des {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }
+
+  .des-text {
+    width: 100%;
+    margin-bottom: 1.5rem; /* Add some space between text and images on smaller screens */
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column; /* Stack images below each other */
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+
+  .image img {
+    max-width: 100%; /* Ensure images don't overflow their container */
+    margin-bottom: 1rem; /* Add space between stacked images */
+  }
+}

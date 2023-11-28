@@ -1,0 +1,94 @@
+/* Add this CSS to your styles file or component */
+
+.Contact {
+  font-family: "YourFont", sans-serif;
+  font-weight: 700;
+}
+
+.Contact-heading {
+  text-align: center;
+  color: #01959a;
+}
+
+/* Add this CSS to your styles file or component */
+
+.Contact-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.Contact-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #01959a;
+  font-weight: bold;
+}
+
+.Contact-input,
+.Contact-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #b3b3b3;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+.Contact-input:focus,
+.Contact-textarea:focus {
+  border-color: #01959a;
+  outline: none;
+}
+
+.Contact-input::placeholder,
+.Contact-textarea::placeholder {
+  color: #b3b3b3;
+}
+
+.Contact-button {
+  background-color: #01959a;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Contact-button:hover {
+  background-color: #017a80;
+}
+
+.Contact-popup {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #01959a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.Contact-msg {
+  text-align: center;
+}
+
+.ontact-complaint-number {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #01959a;
+}

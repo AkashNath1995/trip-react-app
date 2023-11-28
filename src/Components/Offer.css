@@ -1,0 +1,113 @@
+.offer-container {
+  text-align: center;
+  background: url("https://images.unsplash.com/photo-1634876679764-422a0414d72b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    center/cover no-repeat;
+  border: none;
+  margin: 20px auto;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  color: #435585; /* White text color */
+}
+.offer-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-decoration: none; /* Remove underline */
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Animation for h2 */
+.offer-container h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333; /* Color of the underline */
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.offer-container h2:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.timer {
+  color: #363062; /* Initial color for the timer */
+  font-weight: bolder;
+  word-spacing: 2px;
+  font-size: 700;
+  animation: blink 3s infinite alternate; /* Blinking animation for the timer */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.offer-container p {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.discount-details {
+  margin-top: 20px;
+}
+
+/* Updated styling for .discount-details p */
+
+/* Further Updated styling for .discount-details p */
+
+.discount-details p {
+  margin: 12px 0;
+  color: #333;
+  font-size: 18px;
+
+  font-weight: bold;
+  text-align: center; /* Top border for separation */
+  /* Padding on top of the paragraph */
+}
+
+.discount-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .offer-container {
+    max-width: 100%;
+  }
+}

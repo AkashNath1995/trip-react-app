@@ -1,0 +1,177 @@
+/* Font Styles */
+body {
+  font-family: "YourFont", sans-serif;
+}
+/* Header Styles */
+/* Header Styles */
+.trip-head {
+  font-size: 34px;
+  text-align: center;
+  color: #2c3e50; /* Dark gray text color */
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Add letter spacing for better readability */
+}
+
+/* Trip Description Styles */
+.trip-description {
+  font-size: 20px;
+  color: #555; /* Dark gray text color */
+  margin-top: 10px;
+  line-height: 1.6; /* Slightly increased line height for better spacing */
+  text-align: center;
+}
+
+/* Container Styles */
+.paris-container-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Section Container Styles */
+.inclusions-exclusions,
+.payment-policy,
+.cancellation-policy,
+.detailed-itinerary,
+.about-destination {
+  flex: 1;
+  min-width: calc(33.33% - 20px);
+  background-color: #ffffff;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 400px; /* Set a maximum height for each section */
+  overflow-y: auto; /* Enable scrolling for overflow content */
+}
+
+.show-more-less {
+  border: none;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  color: #01959a;
+  cursor: pointer;
+}
+
+/* Section Header Styles */
+.inclusions-exclusions h3,
+.payment-policy h3,
+.cancellation-policy h3,
+.detailed-itinerary h3,
+.about-destination h3 {
+  font-size: 24px;
+  color: #01959a;
+  margin-bottom: 10px;
+}
+
+/* List Item Styles */
+li {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+/* About Destination Container Styles */
+.about-destination {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  max-height: 400px; /* Set a maximum height for the about-destination section */
+  overflow-y: auto; /* Enable scrolling for overflow content */
+}
+.about-destination-name {
+  font-size: 20px;
+  text-align: center;
+  color: #01959a;
+}
+.about-destination-button {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #01959a;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 2px 20px;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth transition for text color change */
+}
+
+.about-destination-button:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #01959a;
+  transition: width 0.3s; /* Smooth transition for the underline appearance */
+}
+
+/* Optional: Adjust the transition for the text color on hover */
+.about-destination-button:hover {
+  color: #01959a; /* Text color on hover */
+}
+
+/* About Destination Image Styles */
+.about-destination img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+/* About Destination Text Styles */
+.about-destination-paragraph {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+  margin: 15px 0;
+  position: relative;
+}
+
+.pay-now {
+  margin-left: 5px;
+  margin-top: 25px;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: solid #01959a; /* Teal background color */
+  color: #000; /* White text color */
+  text-decoration: none; /* Remove default underline */
+  display: inline-block; /* Make the link a block element for consistent spacing */
+  border-radius: 4px; /* Add border-radius for a subtle rounded appearance */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color change */
+}
+/* Optional: Hover effect for a subtle interaction */
+.pay-now:hover {
+  color: #fff;
+  background-color: #01959a; /* Darker teal on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .paris-container-items {
+    flex-direction: column;
+  }
+
+  .inclusions-exclusions,
+  .payment-policy,
+  .cancellation-policy,
+  .detailed-itinerary,
+  .about-destination {
+    min-width: 100%;
+    max-height: none; /* Remove max-height for smaller screens */
+  }
+
+  .about-destination {
+    max-height: none; /* Remove max-height for smaller screens */
+  }
+}
